@@ -178,10 +178,16 @@ section {
    max-width: 72.5rem;
 }
 
+#home .imageArea,
+#dream .imageArea {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 #home .imageArea img,
 #dream .imageArea img {
    max-width: 62.5rem;
-   min-width: 90%;
    height: auto;
    object-fit: cover;
 }
@@ -264,19 +270,90 @@ section {
    padding: 2rem;
 }
 
+#footer p {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+}
+
 #footer p,
 #footer a {
    color: white;
    text-transform: capitalize;
+   text-align: center;
 }
 
 #footer a {
    padding: 0.3rem 0.6rem 0.4rem;
    background-color: rgba(0, 210, 255, 0.2);
    border-radius: 0.5rem;
+   white-space: nowrap;
 }
 
 #footer a:hover {
    background-color: rgba(0, 210, 255, 1);
    color: black;
+}
+
+@media screen and (max-width: 1429px) {
+   #home .container,
+   #dream .container {
+      justify-content: center;
+   }
+
+   #dream .textArea {
+      order: 1;
+   }
+
+   #dream .imageArea {
+      order: 2;
+   }
+}
+
+@media screen and (max-width: 1199px) {
+   #experience .cards {
+      gap: 2rem;
+   }
+}
+
+@media screen and (max-width: 1049px) {
+   #experience .cards {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 5rem;
+      max-width: 70%;
+      margin: 0 auto;
+   }
+}
+
+@media screen and (max-width: 799px) {
+   #home .imageArea img,
+   #dream .imageArea img {
+      max-width: 90%;
+   }
+
+   #experience .cards {
+      max-width: 80%;
+   }
+}
+
+@media screen and (max-width: 699px) {
+   #experience .cards {
+      max-width: 90%;
+   }
+}
+
+@media screen and (max-width: 599px) {
+   #experience .cards {
+      max-width: 100%;
+   }
+}
+
+@media screen and (max-width: 549px) {
+   #experience .card {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+   }
 }
