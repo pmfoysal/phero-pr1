@@ -134,17 +134,23 @@ section {
    width: 100%;
 }
 
-.displayText {
+.displayText,
+.sectionHeading {
    font-size: 6rem;
    text-transform: capitalize;
 }
 
-.displayText span {
+.displayText span,
+.sectionHeading span {
    font-size: inherit;
    line-height: inherit;
    font-weight: inherit;
    text-transform: inherit;
    color: #00d2ff;
+}
+
+.sectionHeading {
+   font-size: 5rem;
 }
 
 .sectionTitle {
