@@ -196,7 +196,7 @@ section {
 /* ===>>> Dream Section Styles Here <<<=== */
 
 #dream {
-   padding: 5rem 1.5rem;
+   padding: 5rem 1.5rem 10rem;
 }
 
 #dream .decoration {
@@ -208,4 +208,48 @@ section {
 #dream .decoration img {
    width: 10rem;
    height: auto;
+}
+
+/* ===>>> Experience Section Styles Here <<<=== */
+
+#experience .container {
+   display: flex;
+   flex-direction: column;
+   gap: 8rem;
+}
+
+#experience .sectionHeading {
+   text-align: center;
+}
+
+#experience .cards {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 8rem;
+}
+
+#experience .card {
+   padding: 3rem;
+   border-radius: 2rem;
+   box-shadow: 0 0.75rem 2rem rgba(58, 123, 213, 0.15);
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+#experience .card:nth-child(1) {
+   border-left: 0.6rem solid #00d2ff;
+}
+
+#experience .card:nth-child(2) {
+   border-left: 0.6rem solid #3a7bd5;
+}
+
+#experience .card .cardHeading {
+   font-size: 4rem;
+}
+
+#experience .card .cardTitle {
+   font-size: 2.5rem;
+   color: #00d2ff;
 }
